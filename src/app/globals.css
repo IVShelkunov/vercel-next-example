@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Определяем наши кибер-цвета как CSS-переменные */
+  /* Tailwind v4 сам превратит их в классы типа bg-cyber-green, text-cyber-green */
+  
+  --color-cyber-bg: #020202;
+  --color-cyber-green: #39FF14;
+  --color-cyber-pink: #FF00FF;
+  --color-cyber-cyan: #C0FFFF;
+  --color-cyber-blue: #00FFFF; 
+  --color-cyber-yellow: #FCEE0A;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  /*свечение кнопок */
+  --shadow-cyber-hub: 0 0 10px var(--color-cyber-green);
+  --shadow-cyber-drive: 0 0 20px var(--color-cyber-pink);
+  --shadow-cyber-drive: 0 0 20px var(--color-cyber-blue);
+  /*анимация */
+  --animate-cyber-pulse: cyber-pulse 1.2s ease-in-out infinite;
+  
+}
+/*свечение заголовка*/
+@utility text-cyber-glow {
+  text-shadow: 0 0 14px rgba(0, 255, 255, 0.25),
+               0 0 50px rgba(255, 255, 255, 0.2),
+               0 0 6px rgba(255, 255, 255, 0.15),
+               0 0 5px rgba(255, 255, 255, 1.0);
+}
+/*свечение кнопок */
+@utility hub-cyber-glow {
+  box-shadow: 0 0 ;
+}
+/*настройки шрифта заголока*/
+@utility font-tech-features {
+  font-variant-ligatures: contextual;
+  font-feature-settings:"calt" 1, "zero" 1, "cv03" 1;
+}
+  /*анимация пульса курсора*/
+
+@keyframes cyber-pulse {
+    0%,100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+/* Базовые стили для body */
+body {
+  background-color: var(--color-cyber-bg);
+  color: white;
+}
