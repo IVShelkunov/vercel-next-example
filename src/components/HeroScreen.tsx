@@ -1,8 +1,7 @@
 import Image from "next/image";
 import GridContainer from "./layuot/GridContainer";
 import ActionButton from "./ui/actionButton";
-
-export default function LayersPracticeItem() {
+export default function HeroScreen() {
     return(
         <div className="relative w-full h-screen ">
             {/*фоновое изображение */}

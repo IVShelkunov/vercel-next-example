@@ -1,15 +1,9 @@
-import LayersPracticeItem from "@/components/LayersPractice";
-
-
-
+import HeroScreen from "@/components/HeroScreen";
 
 export default function Home() {
   return (
     <main>
-      <LayersPracticeItem/>
-      
-    </main>
-      
-    
+      <HeroScreen/>
+    </main> 
   );
 }

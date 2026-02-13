@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Image from "next/image";
 import localFont from "next/font/local";
-import GridContainer from "@/components/layuot/GridContainer";
 import Header from "@/components/layuot/header";
 const jetbrains = localFont({
   src: './fonts/JetBrainsMono.ttf',
