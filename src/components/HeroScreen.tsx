@@ -18,7 +18,7 @@ export default function HeroScreen() {
                 <GridContainer className=" h-12 ">
                     <p className="col-span-4 flex justify-center
                     text-xs font-mono text-cyber-cyan font-extrabold "
-                    >[ STATUS: SYSTEM_ONLINE ]</p>
+                    >[ {process.env.NEXT_PUBLIC_CYBER_STATUS} ]</p>
                 </GridContainer>
             </div>
             {/*Заголовок DDD */}
