@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import Header from "@/components/layuot/header";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const jetbrains = localFont({
   src: './fonts/JetBrainsMono.ttf',
   variable: '--font-jetbrains',
@@ -26,6 +28,8 @@ export default function RootLayout({
       >
         <Header/>
         {children}
+        <Analytics/>
+        <SpeedInsights/>
       </body>
     </html>
   );
