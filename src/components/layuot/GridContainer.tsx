@@ -11,7 +11,7 @@ export default function GridContainer({
     as: Component = 'div'
 }:GridContainerProps) {
     return(
-        <Component className={`w-full grid grid-cols-4 px-5 gap-4 max-w-md mx-auto ${className}`}>
+        <Component className={`w-full grid grid-cols-4  px-5 gap-4 max-w-md mx-auto ${className}`}>
             {children}
         </Component>
     );

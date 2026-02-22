@@ -11,6 +11,7 @@
   --color-cyber-cyan: #C0FFFF;
   --color-cyber-blue: #00FFFF; 
   --color-cyber-yellow: #FCEE0A;
+  --color-cyber-dose: #9D00FF;
   --font-mono: var(--font-jetbrains), ui-monospace, monospace;
   /*свечение кнопок */
   --shadow-cyber-hub: 0 0 10px var(--color-cyber-green);
@@ -18,7 +19,26 @@
   --shadow-cyber-drive: 0 0 20px var(--color-cyber-blue);
   /*анимация */
   --animate-cyber-pulse: cyber-pulse 1.2s ease-in-out infinite;
+}
+/*свечение иконок*/
+@utility icon-glow {
+   --glow-color: var(--color-cyber-green);
   
+  filter: 
+    drop-shadow(0 0 50px var(--glow-color));
+
+}
+/*  МОДИФИКАТОРЫ ЦВЕТА */
+@utility glow-pink {
+  --glow-color: var(--color-cyber-pink);
+}
+
+@utility glow-blue {
+  --glow-color: var(--color-cyber-blue);
+}
+
+@utility glow-purple {
+  --glow-color: var(--color-cyber-dose);
 }
 /*свечение заголовка*/
 @utility text-cyber-glow {
@@ -27,6 +47,7 @@
                0 0 6px rgba(255, 255, 255, 0.15),
                0 0 5px rgba(255, 255, 255, 1.0);
 }
+
 /*свечение кнопок */
 @utility hub-cyber-glow {
   box-shadow: 0 0 ;

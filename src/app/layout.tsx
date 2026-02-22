@@ -24,8 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={jetbrains.variable}>
       <body
-        className="antialiased min-h-screen w-full bg-black text-white  " 
-      >
+        className="antialiased min-h-screen w-full bg-black text-white  ">
         <Header/>
         {children}
         <Analytics/>
